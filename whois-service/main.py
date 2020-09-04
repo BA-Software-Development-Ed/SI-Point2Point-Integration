@@ -1,36 +1,6 @@
 import sys
 import subprocess
 
-'''
-A whois service using 'sys' and 'subprocess'.
---------------------------------------------
-
-execution::
------------
-takes two arguments [host, port]
-structure:: python whois-service.py <host> <port>
-example::   python whois-service.py http://whois.arin.net/ 43
-
-conditions::
-------------
-if no <host> if provided
-- the script will use a fallback host (whois.dk-hostmaster.dk)
-
-if no <port> is provided
-- the script will use a fallback port (43)
-
-exceptions::
-------------
-on empty response
-- Couldn't find host <host>
-
-on response code 68
-- Couldn't get connection to <host>
-
-on default error
-- Unknown error while connecting to <host>
-'''
-
 
 def whois():
 
