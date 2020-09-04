@@ -8,9 +8,6 @@ _TCP/UDP Exercises_
 
 [Exercise](https://datsoftlyngby.github.io/soft2020fall/resources/ec16b918-P2-TCP.html)
 
-```bash
-
-```
 
 ## Project 3: Capital Echo
 
@@ -18,6 +15,3 @@ _TCP/UDP Exercises_
 
 [Exercise](https://datsoftlyngby.github.io/soft2020fall/resources/f72fb747-P3-UDP.html)
 
-```bash
-
-```

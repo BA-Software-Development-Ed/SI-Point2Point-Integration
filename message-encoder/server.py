@@ -18,4 +18,4 @@ def root():
     return 'Send a POST request with some text or \'stop\' to terminate the server'
 
 
-app.run(port=6666, debug=True)
+app.run(port=6666, threaded=True, debug=True)

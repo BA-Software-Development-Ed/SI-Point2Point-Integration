@@ -4,19 +4,20 @@ import subprocess
 
 def whois():
 
-    # tries to get second argument
+    host = None
+    port = None
+
     try:
         host = sys.argv[1]
-    except:
-        host = "whois.dk-hostmaster.dk"
-        print(f'Host value missing, using fallback host: {host}')
-
-    # tries to get third argument
-    try:
         port = sys.argv[2]
     except:
-        port = 43
-        print(f'Port value missing, using fallback port: {port}')
+        if host is None:
+            host = "whois.dk-hostmaster.dk"
+            print(f'Notice:: Host value missing, using fallback host: {host}')
+
+        if port is None:
+            port = 43
+            print(f'Notice:: Port value missing, using fallback port: {port}')
 
     # subprocess calling 'whois' with host and port
     response = subprocess.run(['whois', host, '-p', str(port)], stdout=subprocess.PIPE)
