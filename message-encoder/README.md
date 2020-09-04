@@ -1,5 +1,7 @@
 # Project 2: Message Encoder
 
+[goto root](../README.md)
+
 This project illustrates control over the communication and exchange of text messages between a client and a server using TCP protocol over Sockets and endpoints.
 
 Server opens a server socket on a specified port and starts listening on it. When the socket detects an incoming connection, it will accept it and create a new `Socket` instance to facilitate the communication to the client, sending the request.

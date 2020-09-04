@@ -1,5 +1,7 @@
 # Project 3: Capital Echo
 
+[goto root](../README.md)
+
 This project illustrates control over the communication and exchange of text messages between a client and a server over UDP protocol.
 
 The client sends a text message to the server, and the server returns it back, after processing.
@@ -60,3 +62,5 @@ python client.py 127.0.0.1 20001 "Hello CPHBusiness"
 | On | Message |
 | --- | --- |
 | - request failure | Couldn't get connection to `<host>` |
+
+[reference](https://pythontic.com/modules/socket/udp-client-server-example)

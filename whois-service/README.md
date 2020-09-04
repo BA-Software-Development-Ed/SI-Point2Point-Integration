@@ -1,5 +1,7 @@
 # Project 1: Whois Service
 
+[goto root](../README.md)
+
 This project illustrates network communication to a server, which provides data about internet host domains.
 
 Our task is to create an interactive client application, which can send request to one of the publicly known whois servers, for example `whois.dk-hostmaster.dk` or `internic.net`, and to print out the received response. The whois servers use port `43` for TCP communication with the clients.
